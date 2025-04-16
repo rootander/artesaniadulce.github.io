@@ -1,0 +1,85 @@
+html, body {
+    overflow-x: hidden; /* Esto elimina el desplazamiento horizontal */
+}
+    #miVideo {
+        position: relative;
+        left: -14.45%;         /* Para que el video se extienda más allá del contenedor */
+        width: 128.9%;         /* Aumenta el ancho del video más allá de su contenedor */
+        height: auto;          /* Mantiene la proporción del video */
+        object-fit: cover;     /* Asegura que el video cubra completamente el área sin distorsionar */
+        object-position: center center; /* Mantiene el video centrado */
+        margin: 0;             /* Elimina márgenes */
+        padding: 0;            /* Elimina rellenos */
+        border: none;          /* Elimina bordes si los hubiera */
+        bottom: 24px;          /* Desplaza el video hacia abajo si es necesario */
+      }
+.bg-propio{
+   background-color: #A67B5B !important;
+}
+.bg-nuevo{
+    background-color: #ecba6d !important;
+ }
+.text-propio{
+    color: #A67B5B !important;
+ }
+.text-nuevo{
+  color:#ecba6d !important ;
+ }
+.btn-personal{
+    background-color: #be8457 !important;
+}
+.btn-propio{
+  border-color: #A67B5B;
+}
+
+.fancy-greatvibes {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    color: #fff8dc;
+    text-shadow: 1px 1px 2px #c0392b;
+    font-weight: bold;
+}
+
+.fancy-parisienne {
+    font-family: 'Parisienne', cursive;
+    font-size: 2rem;
+    color: #fff5e1;
+    text-shadow: 1px 1px 3px #d35400;
+    font-weight: bold;
+}
+
+
+.fancy-sacramento {
+    font-family: 'Sacramento', cursive;
+    font-size: 2.2rem;
+    color: #ffe6f0;
+    text-shadow: 1px 1px 3px #c2185b;
+    font-weight: bold;
+}
+
+.fancy-alexbrush {
+    font-family: 'Alex Brush', cursive;
+    font-size: 5rem;
+    color: #A67B5B;
+    font-weight: bold;
+}
+
+.contactanos, .historia, .tortas, .inciarsesion {
+    font-family: 'Poppins', sans-serif;
+}
+.contenedor-principal{
+    display: flex;
+    justify-content: space-between;  /* Esto separa los elementos en izquierda, centro y derecha */
+    padding: 20px;
+}
+
+.contenedor1 img{
+    width: 40px; /* Ancho de los iconos */
+    height: auto; /* Mantiene la proporción de los iconos */
+    transition: transform 0.3s; /* Efecto de hover */
+}
+.contenedor4 img{
+    width: 200px; /* Ancho de los iconos */
+    height: auto; /* Mantiene la proporción de los iconos */
+    transition: transform 0.5s; /* Efecto de hover */
+}

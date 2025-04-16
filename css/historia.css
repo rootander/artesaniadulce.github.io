@@ -1,0 +1,35 @@
+.contenido {
+    padding: 50px;
+    text-align: center;
+    background: #f9f9f9;
+
+}
+.contenido h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #A67B5B;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #A67B5B;
+    display: block;
+    padding-bottom: 10px;
+}
+.contenido p{
+  font-size: large;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-overflow: initial;
+  padding: 20px;
+}
+.imagen{
+   text-align: center;
+   max-width: 100%;
+   padding: 50px;
+   background:scroll;
+   background-color: #ecd8b8;
+   display: block;
+}
+.imagen img{
+    border-radius: 10px;
+    display: block; /*se centra como un bloque ocupando todo su espacio*/
+    max-width: 50%; /*ajusta la imagen dentro del background */
+    margin: 0 auto; /* Centra la imagen */
+}

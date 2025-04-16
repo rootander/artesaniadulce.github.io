@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Luxurious+Roman&family=Sanchez:ital@0;1&display=swap');
+#modalCarac,
+#modalCarac .modal-body,
+#modalCarac .modal-footer,
+#modalCarac .btn {
+    /* font-family: "Sanchez", serif; */
+    font-family: "Fredoka", sans-serif;
+
+    font-weight:100%;
+    font-size: 22px;
+
+
+}
