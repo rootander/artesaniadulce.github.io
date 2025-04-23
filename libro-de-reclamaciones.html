@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Libro de Reclamaciones Perú</title>
+    <meta name="description" content="Libro de Reclamaciones Perú"> 
+    <link rel="shortcut icon" href="img/LOGOTIPO.png" type="image/x-icon">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/libro-de-reclamaciones.css">
+</head>
+    
+<body>
+<div class="cuerpo">
+    <div class="cabecera">
+        <div class="superior">
+            <div class="logo">
+                <img src="img/LOGOTIPO.png">
+            </div>
+            
+            <div class="slogan">
+                <div class="titulo-con-icono">
+                    <img src="img/sinfon.png" alt="Icono">
+                    <h1>LIBRO DE <br>RECLAMACIONES PERÚ</h1>
+                </div>
+                
+                <p>"Conforme a lo establecido en el Código de Protección y Defensa del Consumidor este establecimiento cuenta con un Libro de Reclamaciones a tu disposición Solicitalo para registrar una queja o reclamo"</p>
+                
+                <p><b>Formulario disponible solo para reclamos/quejas relacionados a la tienda Online.</b></p>
+                
+                <p style="font-weight: bold;">Pastelería Artesania Dulce</p>
+                <p style="font-weight: bold;">Jirón Agustín Gamarra 1289, La Victoria, Lima</p>
+            </div>
+        </div>
+    </div>
+        
+    <div class="contenido">   
+        <div class="left">
+            <h2>CONSULTAR RECLAMACIONES</h2>
+            <p>Si usted ha realizado alguna reclamación<br>
+            vía web, podrá verificar el historial.</p>
+            
+            <form class="consultar-reclamo" action="" name="form-consultar" id="form-consultar">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td class="left-td">Código de Reclamo:</td>
+                            <td><input name="codigo-reclamo" id="codigo-reclamo" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td valign="bottom" style="padding-bottom:0" class="left-td">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td valign="bottom" style="padding-bottom:0" class="left-td">
+                                <img id="captcha" src="captcha.php" alt="CAPTCHA"
+                                     style="cursor:pointer;"
+                                     onclick="this.src='captcha.php?'+Math.random();">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Código Seguridad:</td>
+                            <td class="left-td" valign="top"><input name="codigo-seguridad" id="codigo-seguridad" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td class="left-td" colspan="2" align="center"><input class="boton" name="" type="button" onclick="" value="BUSCAR"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        
+        <div class="right">
+            <h2>IDENTIFICADOR DEL CONSUMIDOR RECLAMANTE</h2>
+            <form class="reclamacion" action="" name="form-reclamacion" id="form-reclamacion"> 
+                <input name="hdd-codigo-empresa" type="hidden" id="hdd-codigo-empresa" value="1951">
+                <input name="hdd-codigo" type="hidden" id="hdd-codigo" value="492971951">
+                
+                <table>
+                    <tbody>
+                        <tr>
+                            <td valign="top" class="right-td"><b>Sede/Sucursal:</b></td>
+                            <td colspan="3">
+                                <select style="width: 100%;font-size:14px;padding:12px" name="sedes" class="seleccionar" id="sedes">
+                                    <option value="0">Ninguno</option>
+                                    <option razon-social="San Antonio de Magdalena S.A.C" ruc="20606508868" value="2564">Jirón Agustín Gamarra 1289, La Victoria, Lima</option>
+                                    <option razon-social="San Antonio de Angamos S.A.C." ruc="20502117972" value="2624">Avenida Próceres de la Independencia 1632, San Juan de Lurigancho, Lima</option>
+                                </select>
+                                <p>Razón Social: <span style="font-weight: bold;" id="razon-social"></span></p>
+                                <p>RUC: <span id="ruc" style="font-weight: bold;"></span></p>
+                            </td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="right-td" colspan="4">
+                                <label class="label-radio" for="natural">
+                                    <input name="persona-natural" id="persona-natural" value="1" type="radio" checked="checked"> 
+                                    Persona Natural
+                                </label>
+                                <label class="label-radio" for="juridica">
+                                    <input name="persona-natural" id="persona-juridica" value="2" type="radio"> 
+                                    Persona Jurídica
+                                </label>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td width="155px">Nombre y Apellido:</td>
+                            <td><input name="nombres-apellidos" type="text" class="input-grande" id="nombres-apellidos"></td>
+                            <td>Doc. Identidad</td>
+                            <td>
+                                <select name="tipo-documento" style="width:120px" class="seleccionar" id="tipo-documento">
+                                    <option value="1">DNI</option>
+                                    <option value="2">RUC</option>
+                                    <option value="3">Carnet de Extranjería</option>
+                                </select>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Razón Social:</td>
+                            <td><input name="razon-social" type="text" class="input-grande" id="razon-social-input"></td>
+                            <td>N. Documento:</td>
+                            <td><input name="numero-documento" type="text" class="input-chico" id="numero-documento"></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Domicilio:</td>
+                            <td><input name="domicilio" type="text" class="input-grande" id="domicilio"></td>
+                            <td>Teléfono:</td>
+                            <td><input name="telefono" type="text" class="input-chico" id="telefono"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <table width="100%" border="0">
+                    <tbody>
+                        <tr>
+                            <td width="155px">Departamento:</td>
+                            <td>
+                                <select name="departamento" id="departamento" class="seleccionar">
+                                    <option value="--">[Departamento]</option>
+                                    <option value="01">AMAZONAS</option>
+                                    <option value="02">ANCASH</option>
+                                    <option value="03">APURIMAC</option>
+                                    <option value="04">AREQUIPA</option>
+                                    <option value="05">AYACUCHO</option>
+                                    <option value="06">CAJAMARCA</option>
+                                    <option value="07">CALLAO</option>
+                                    <option value="08">CUSCO</option>
+                                    <option value="09">HUANCAVELICA</option>
+                                    <option value="10">HUÁNUCO</option>
+                                    <option value="11">ICA</option>
+                                    <option value="12">JUNÍN</option>
+                                    <option value="13">LA LIBERTAD</option>
+                                    <option value="14">LAMBAYEQUE</option>
+                                    <option value="15">LIMA</option>
+                                    <option value="16">LORETO</option>
+                                    <option value="17">MADRE DE DIOS</option>
+                                    <option value="18">MOQUEGUA</option>
+                                    <option value="19">PASCO</option>
+                                    <option value="00">PERÚ</option>
+                                    <option value="20">PIURA</option>
+                                    <option value="21">PUNO</option>
+                                    <option value="22">SAN MARTÍN</option>
+                                    <option value="23">TACNA</option>
+                                    <option value="24">TUMBES</option>
+                                    <option value="25">UCAYALI</option>
+                                </select>
+                            </td>
+                            <td>Provincia:</td>
+                            <td>
+                                <div id="ajax-provincia" style="float:left">
+                                    <select name="provincia" class="seleccionar" id="provincia">
+                                        <option value="0">[ Seleccionar ]</option>
+                                        <option value="1">LIMA</option>
+                                        <option value="2">CALLAO</option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Distrito:</td>
+                            <td>
+                                <div style="float:left" id="ajax-distrito">
+                                    <select name="distrito" class="seleccionar" id="distrito">
+                                        <option value="0">[ Seleccionar ]</option>
+                                        <option value="1">La Victoria</option>
+                                        <option value="2">SjL</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td style="float:left">E-mail:</td>
+                            <td><input name="email" style="width:100%" type="text" class="input-chico" id="email"></td>
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="4" class="right-td">
+                                <span>¿Eres menor de Edad?</span>
+                                <label style="margin-left:40px;" class="label-radio" for="si-menor">
+                                    <input name="menor-edad" id="si-menor" value="1" type="radio">
+                                    Sí
+                                </label>
+                                <label style="margin-left:40px;" class="label-radio" for="no-menor">
+                                    <input name="menor-edad" id="no-menor" value="0" type="radio" checked="checked">
+                                    No
+                                </label>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="4" class="right-td">Datos del Padre, Madre o Autor</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <table width="100%" border="0">
+                    <tbody>
+                        <tr>
+                            <td width="155px">Nombre y Apellido:</td>
+                            <td><input name="nombres-apellidos-tutor" readonly="readonly" type="text" class="input-grande" id="nombres-apellidos-tutor"></td>
+                            <td>DNI/CE:&nbsp;&nbsp;&nbsp;</td>
+                            <td><input name="documento-tutor" readonly="readonly" type="text" class="input-chico" id="documento-tutor"></td>
+                        </tr>
+                        
+                        <tr>
+                            <td width="155px">Email del Apoderado</td>
+                            <td><input name="email-apoderado" readonly="readonly" type="text" class="input-grande" id="email-apoderado"></td>
+                            <td>Teléfono Apoderado</td>
+                            <td><input name="telefono-apoderado" readonly="readonly" type="text" class="input-chico" id="telefono-apoderado"></td>
+                        </tr>
+                        
+                        <tr>
+                            <td width="155px">Dirección del Apoderado</td>
+                            <td colspan="3"><input style="width: 100%" name="domicilio-apoderado" readonly="readonly" type="text" class="input-grande" id="domicilio-apoderado"></td>
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="4"><h2 class="right-td">MANIFIESTO DEL CONSUMIDOR RECLAMANTE</h2></td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="right-td" colspan="4">
+                                Tipo: 
+                                <label title="Disconformidad relacionada a los productos o servicios" style="margin-left:40px;" class="label-radio" for="reclamo">
+                                    <input type="radio" name="tipo-solicitud" id="tipo-reclamo" checked="checked" value="1">
+                                    Reclamo
+                                </label>
+                                <label title="Disconformidad no relacionada a los productos o servicios; o malestar o descontento respecto a la atención al público." style="margin-left:40px;" class="label-radio" for="queja">
+                                    <input type="radio" name="tipo-solicitud" id="tipo-queja" value="2">
+                                    Queja
+                                </label>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="right-td" colspan="4">
+                                Bien Contratado: 
+                                <label style="margin-left:40px;" class="label-radio" for="producto">
+                                    <input checked="checked" type="radio" name="tipo-bien" id="producto" value="1">
+                                    Producto
+                                </label>
+                                <label style="margin-left:40px;" class="label-radio" for="servicio">
+                                    <input type="radio" name="tipo-bien" id="servicio" value="2">
+                                    Servicio
+                                </label>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="right-td">Valor del producto o servicio *</td>
+                            <td class="right-td"><input style="width: 80%" type="text" id="monto-reclamado" name="monto-reclamado" class="input-grande" placeholder="Ingrese el Monto Reclamado"></td>
+                            <td class="right-td" colspan="2">
+                                <input style="width: 100%" type="text" name="asunto-servicio" id="asunto-servicio" class="input-grande" placeholder="Producto o servicio adquirido">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <table width="100%" border="0">
+                    <tbody>
+                        <tr>
+                            <td class="right-td">Comprobante de Pago:</td>
+                            <td>
+                                <select name="tipo-comprobante" class="seleccionar" id="tipo-comprobante">
+                                    <option value="1">FACTURA</option>
+                                    <option value="2">BOLETA</option>
+                                    <option value="3">RECIBO</option>
+                                    <option value="4">SIN COMPROBANTE</option>
+                                </select>
+                            </td>
+                            <td>N°</td>
+                            <td><input name="numero-comprobante" style="width:100%" type="text" class="input-chico" id="numero-comprobante"></td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="right-td">Archivo</td>
+                            <td><input type="file" name="archivo-adjunto" id="archivo-adjunto"></td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="right-td" width="155px">Detalle (descripción de los hechos)</td>
+                            <td class="right-td" colspan="3">
+                                <textarea class="area-textarea" name="detalle-hechos" id="detalle-hechos" cols="45" rows="5"></textarea>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="right-td">Pedido (detalle de lo que solicita)</td>
+                            <td class="right-td" colspan="3">
+                                <textarea class="area-textarea" name="detalle-pedido" id="detalle-pedido" cols="45" rows="5"></textarea>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="right-td">Acciones tomadas por el Proveedor:</td>
+                            <td class="right-td" colspan="3">
+                                <textarea disabled="yes" style="background-color: darkgray;" class="area-textarea" name="acciones-proveedor" id="acciones-proveedor" cols="45" rows="5"></textarea>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="right-td" colspan="4">
+                                <label class="label-check" for="acepto-declaracion">
+                                    <input type="checkbox" name="acepto-declaracion" id="acepto-declaracion">
+                                </label>
+                                Declaro ser el titular del contenido del presente formulario, manifestando bajo declaración jurada los hechos descritos en él.
+                                <span id="mensaje-error"></span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="right-td" colspan="4" align="center">
+                                <input name="btn-enviar" type="button" class="boton" id="btn-enviar" value="ENVIAR">
+                                <input name="btn-cancelar" type="button" onclick="javascaript:window.location='index.html';" class="boton" id="btn-cancelar" value="CANCELAR">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+    
+    <div class="footer">La Victoria, Gamarra</div>
+</div>
+</body>
+</html>
